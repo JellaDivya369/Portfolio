@@ -34,7 +34,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href="/resume.pdf" download="Jella_Divya_Resume.pdf">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Jella_Divya_Resume.pdf">
               <button className="resume-btn"><FiDownload /> Download Resume</button>
             </a>
           </li>
@@ -51,7 +51,7 @@ export default function Navbar() {
             <span style={{ color: 'var(--accent)', marginRight: 8 }}>{item.num}.</span>{item.label}
           </a>
         ))}
-        <a href="/resume.pdf" download="Jella_Divya_Resume.pdf">
+        <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Jella_Divya_Resume.pdf">
           <button className="resume-btn" style={{ marginTop: 16 }}><FiDownload /> Download Resume</button>
         </a>
       </div>

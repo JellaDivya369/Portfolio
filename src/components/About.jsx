@@ -27,7 +27,7 @@ export default function About() {
           </p>
         </div>
         <div className="about-image">
-          <img src="/profile.png" alt="Jella Divya" />
+          <img src={`${import.meta.env.BASE_URL}profile.png`} alt="Jella Divya" />
         </div>
       </div>
     </section>
